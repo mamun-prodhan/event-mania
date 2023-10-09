@@ -7,7 +7,7 @@ const Root = () => {
     <div className="max-w-7xl min-h-screen mx-auto relative">
       <Navbar></Navbar>
       <Outlet></Outlet>
-      <div className="absolute bottom-0 w-[100%]">
+      <div className="absolute bottom-[-1] w-[100%]">
         <Footer></Footer>
       </div>
     </div>
