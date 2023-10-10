@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
-import { FaUserAlt } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -25,7 +24,7 @@ const Navbar = () => {
         <NavLink to="/gallary">Gallary</NavLink>
       </li>
       <li>
-        <NavLink to="/Blogs">Blogs</NavLink>
+        <NavLink to="/vlogs">Blogs</NavLink>
       </li>
       <li>
         <NavLink to="/login">Login</NavLink>

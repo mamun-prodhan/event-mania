@@ -9,36 +9,35 @@ const WhoWeAre = () => {
           <span className="font-extrabold">No.1 </span>
           <span className="font-medium">Events Management</span>
         </h2>
-        <button className="btn btn-secondary">Get Started</button>
+        <button className="btn btn-primary">Get Started</button>
       </div>
       <div className="flex-1">
         <h2 className="text-3xl font-bold">Our Mission</h2>
         <hr className="h-1 my-3 bg-black" />
         <p className="my-6 text-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe enim
-          maiores sint commodi ipsum necessitatibus voluptates dolore fugit
-          repudiandae aut provident voluptatem, voluptate quaerat error ratione
-          dolor reiciendis. Illum, neque.
+          Delivering unforgettable events, our mission in event management is to
+          create seamless experiences. From concept to execution, we craft
+          exceptional moments that captivate, connect, and leave a lasting
+          impression.
         </p>
         <p className="italic font-bold text-lg">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
-          pariatur quos cupiditate aliquid odit magni libero fuga id possimus
-          eveniet.
+          With passion and precision, we specialize in curating extraordinary
+          events. Our mission: transforming visions into reality, making every
+          occasion unforgettable.
         </p>
       </div>
       <div className="flex-1">
         <h2 className="text-3xl font-bold">Our Vission</h2>
         <hr className="h-1 my-3 bg-black" />
         <p className="my-6 text-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe enim
-          maiores sint commodi ipsum necessitatibus voluptates dolore fugit
-          repudiandae aut provident voluptatem, voluptate quaerat error ratione
-          dolor reiciendis. Illum, neque.
+          Our vision in event management is to be the industry leader, setting
+          new standards of innovation, creativity, and excellence. We aspire to
+          inspire memorable experiences and elevate event planning worldwide.
         </p>
         <p className="italic font-bold text-lg">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
-          pariatur quos cupiditate aliquid odit magni libero fuga id possimus
-          eveniet.
+          With a commitment to continuous growth, we envision a future where our
+          event management expertise is globally recognized, setting trends and
+          exceeding expectations.
         </p>
       </div>
     </div>
