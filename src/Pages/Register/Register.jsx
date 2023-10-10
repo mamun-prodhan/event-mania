@@ -1,4 +1,10 @@
+import { useContext, useState } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
+
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+  const [error, setError] = useState("");
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -7,6 +13,17 @@ const Register = () => {
     const email = form.get("email");
     const password = form.get("password");
     console.log(name, photoURL, email, password);
+    setError("");
+    if (password.length < 6) {
+      setError("Password must be 6 characters");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setError("Don't have a capital letter");
+      return;
+    } else if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/\|]/.test(password)) {
+      setError("Don't have a special character");
+    }
+    // createUser(email, password);
   };
 
   return (
@@ -18,6 +35,7 @@ const Register = () => {
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
+              {error && <p>{error}</p>};
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
@@ -64,6 +82,8 @@ const Register = () => {
                 className="input input-bordered"
                 required
               />
+              <br />
+              {error && <p className="font-bold text-red-600">{error}</p>}
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>
