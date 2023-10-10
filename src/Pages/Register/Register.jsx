@@ -1,9 +1,11 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -14,6 +16,7 @@ const Register = () => {
     const password = form.get("password");
     console.log(name, photoURL, email, password);
     setError("");
+    setSuccess("");
     if (password.length < 6) {
       setError("Password must be 6 characters");
       return;
@@ -22,8 +25,18 @@ const Register = () => {
       return;
     } else if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/\|]/.test(password)) {
       setError("Don't have a special character");
+      return;
     }
     // createUser(email, password);
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        setSuccess("Success fully Registered");
+      })
+      .catch((error) => {
+        console.log(error);
+        setError(error.message);
+      });
   };
 
   return (
@@ -35,7 +48,6 @@ const Register = () => {
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
-              {error && <p>{error}</p>};
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
@@ -84,11 +96,18 @@ const Register = () => {
               />
               <br />
               {error && <p className="font-bold text-red-600">{error}</p>}
+              {success && <p className="font-bold text-green-600">{success}</p>}
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>
             </div>
           </form>
+          <p className="text-center mb-6">
+            Already have an account? Please
+            <Link to="/login" className="ms-2 font-bold text-indigo-500">
+              Login
+            </Link>
+          </p>
         </div>
       </div>
     </div>
