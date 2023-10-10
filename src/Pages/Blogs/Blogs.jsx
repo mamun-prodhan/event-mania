@@ -1,5 +1,5 @@
 import BlogsCard from "./BlogsCard";
-import image from "../../assets/blogs/big-ebent1.jpg";
+import image from "../../assets/big-ebent1.jpg";
 
 const Blogs = () => {
   const events = [

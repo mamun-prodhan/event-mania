@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Blogs from "../Pages/Blogs/Blogs";
+import Gallary from "../Pages/Gallary/Gallary";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/vlogs",
-        element: <Blogs></Blogs>,
+        element: (
+          <PrivateRoute>
+            <Blogs></Blogs>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/gallary",
+        element: (
+          <PrivateRoute>
+            <Gallary></Gallary>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
