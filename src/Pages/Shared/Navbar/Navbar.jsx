@@ -1,9 +1,12 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import { FaUserAlt } from "react-icons/fa";
+import "./Navbar.css";
 
 const Navbar = () => {
-  const { logOut } = useContext(AuthContext);
+  const { logOut, user } = useContext(AuthContext);
+
   const handleSignOut = () => {
     logOut()
       .then(() => {
@@ -65,8 +68,18 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
+        {user && (
+          <div className="flex items-center gap-3 mx-6">
+            <img
+              className="w-10 rounded-full"
+              src={user.photoURL}
+              alt="Photo"
+            />
+            <p className="font-bold">{user.displayName}</p>
+          </div>
+        )}
         <a onClick={handleSignOut} className="btn">
-          Log Out
+          {user ? "Log out" : "Log In"}
         </a>
       </div>
     </div>

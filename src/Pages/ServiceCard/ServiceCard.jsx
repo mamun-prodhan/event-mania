@@ -12,6 +12,7 @@ const ServiceCard = ({ service }) => {
         <p>
           {description.length > 100 ? description.slice(0, 100) : description}..
         </p>
+        <p className="text-lg font-semibold">Price: ${price}</p>
         <div className="card-actions mt-3">
           <Link to={`details/${id}`}>
             <button className="px-4 py-2 bg-indigo-600 text-white rounded-md text-bold hover:bg-indigo-800">

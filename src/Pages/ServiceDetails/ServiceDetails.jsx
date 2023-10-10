@@ -16,6 +16,7 @@ const ServiceDetails = () => {
         {selectedService[0].title}
       </h2>
       <p className="text-justify">{selectedService[0].description}</p>
+
       <button className="btn btn-primary mt-8">Book Now</button>
     </div>
   );
