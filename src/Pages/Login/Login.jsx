@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
+import swal from "sweetalert";
 
 const Login = () => {
   const [error, setError] = useState("");
@@ -19,6 +20,12 @@ const Login = () => {
         console.log(user);
         setSuccess("successfully logged In");
         navigate(location?.state ? location.state : "/");
+        swal({
+          title: "Successfull",
+          text: "You have successfully logged In",
+          icon: "success",
+          button: "OK",
+        });
       })
       .catch((error) => {
         console.log(error);
@@ -39,6 +46,12 @@ const Login = () => {
         console.log(result.user);
         setSuccess("Successfully logged in");
         navigate(location?.state ? location.state : "/");
+        swal({
+          title: "Successfull",
+          text: "You have successfully logged In",
+          icon: "success",
+          button: "OK",
+        });
       })
       .catch((error) => {
         console.log(error);

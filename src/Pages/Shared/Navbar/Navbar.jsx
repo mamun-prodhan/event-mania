@@ -20,18 +20,16 @@ const Navbar = () => {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
-      <li>
-        <NavLink to="/gallary">Gallary</NavLink>
-      </li>
-      <li>
-        <NavLink to="/vlogs">Blogs</NavLink>
-      </li>
-      <li>
-        <NavLink to="/login">Login</NavLink>
-      </li>
-      <li>
-        <NavLink to="/register">Register</NavLink>
-      </li>
+      {user && (
+        <>
+          <li>
+            <NavLink to="/gallary">Gallary</NavLink>
+          </li>
+          <li>
+            <NavLink to="/vlogs">Blogs</NavLink>
+          </li>
+        </>
+      )}
     </>
   );
   return (
@@ -61,10 +59,12 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Event Mania</a>
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          Event Mania
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+        <ul className="flex gap-10 px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         {user && (
@@ -78,13 +78,16 @@ const Navbar = () => {
           </div>
         )}
         {user ? (
-          <Link onClick={handleSignOut} className="btn">
-            Log out
+          <Link onClick={handleSignOut} className="">
+            Logout
           </Link>
         ) : (
-          <Link to="/login" className="btn">
-            Login
-          </Link>
+          <>
+            <NavLink className="me-10" to="/login">
+              Login
+            </NavLink>
+            <NavLink to="/register">Register</NavLink>
+          </>
         )}
       </div>
     </div>

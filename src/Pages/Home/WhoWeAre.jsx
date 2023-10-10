@@ -2,7 +2,7 @@ import React from "react";
 
 const WhoWeAre = () => {
   return (
-    <div className="flex items-center gap-10 mt-32">
+    <div className="flex flex-col md:flex-row items-center gap-10 mt-32">
       <div className="flex-1">
         <h4 className="text-xl  tracking-[4px]">WE ARE Event Mania</h4>
         <h2 className="text-5xl my-6">

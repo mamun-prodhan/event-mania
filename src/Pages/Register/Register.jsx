@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 
 const Register = () => {
   const { createUser, updateUser } = useContext(AuthContext);
@@ -36,9 +37,20 @@ const Register = () => {
         // update user profile
         updateUser(name, photoURL)
           .then(() => {
-            navigate("/");
+            // navigate("/");
             console.log("Profile Updated");
-            // window.location.reload();
+
+            swal({
+              title: "Register Successfull",
+              text: "You have registered successfully.",
+              icon: "success",
+              button: "OK",
+            }).then(() => {
+              navigate("/");
+              setTimeout(() => {
+                window.location.reload();
+              }, 100);
+            });
           })
           .catch((error) => {
             console.log(error.message);
