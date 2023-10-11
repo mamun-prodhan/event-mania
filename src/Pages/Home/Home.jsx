@@ -6,7 +6,7 @@ import Testimonials from "./Testimonials";
 
 const Home = () => {
   const services = useLoaderData();
-  console.log(services);
+  // console.log(services);
   return (
     <div>
       <Banner></Banner>

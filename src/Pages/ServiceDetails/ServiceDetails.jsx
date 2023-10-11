@@ -4,7 +4,7 @@ const ServiceDetails = () => {
   const { id } = useParams();
   const services = useLoaderData();
   const selectedService = services.filter((service) => service.id === id);
-  console.log(selectedService);
+  // console.log(selectedService);
   return (
     <div className="mt-12">
       <img

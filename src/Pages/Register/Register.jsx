@@ -16,7 +16,7 @@ const Register = () => {
     const photoURL = form.get("photoURL");
     const email = form.get("email");
     const password = form.get("password");
-    console.log(name, photoURL, email, password);
+    // console.log(name, photoURL, email, password);
     setError("");
     setSuccess("");
     if (password.length < 6) {
@@ -32,13 +32,13 @@ const Register = () => {
     // createUser(email, password);
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         setSuccess("Success fully Registered");
         // update user profile
         updateUser(name, photoURL)
           .then(() => {
             // navigate("/");
-            console.log("Profile Updated");
+            // console.log("Profile Updated");
 
             swal({
               title: "Register Successfull",

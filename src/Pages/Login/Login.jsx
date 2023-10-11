@@ -17,7 +17,7 @@ const Login = () => {
     googleSignIn()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         setSuccess("successfully logged In");
         navigate(location?.state ? location.state : "/");
         swal({
@@ -38,12 +38,12 @@ const Login = () => {
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
-    console.log(email, password);
+    // console.log(email, password);
     setError("");
     setSuccess("");
     signIn(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         setSuccess("Successfully logged in");
         navigate(location?.state ? location.state : "/");
         swal({
