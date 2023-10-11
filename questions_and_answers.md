@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: C
 
-<i>One of the parameter is string , here javascript perform type coercion and convert the other number parameter into string and concatenates the two string. </i>
+<i>The function is performing numerical addition and take two parameters. One of the parameter is string , here javascript perform type coercion and convert the other number parameter into string and concatenates the two string. As a result the output will be "12"</i>
 
 </p>
 </details>
