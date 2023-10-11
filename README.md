@@ -1,6 +1,6 @@
-# My Awesome Website
+# Event Mania
 
-Event Mania
+An Event management website
 
 **Live Link:** [https://www.myawesomewebsite.com](https://www.myawesomewebsite.com)
 
