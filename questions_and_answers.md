@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Here food is an array, we declared an object named info with the 0 index element of food array. Then we changed the value of info object. It dosen't effect the main array.Because we declared a new object and we changed the object value. object and array is in different mamory location thats why it dosen't effect the main array</i>
 
 </p>
 </details>
