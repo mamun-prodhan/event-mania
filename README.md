@@ -11,5 +11,3 @@ Event Mania
 - **Private Route:** We have some private or protechted route, user can't get access in those private route without login authentication.
 - **User Profile:** There is a profile section in the navbar, after successfull login user profile image and user name will appear in the navbar.
 - **Responsive Design:** The entire website is fully responsive for the desktop, tablet and mobile device.
-
-Feel free to explore our website and make the most out of these exciting features!
