@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Here we are declareing a variable name greeting and assigning an empty object as value. Now if we console the empty object then the output will be an empty object</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>One of the parameter is string , here javascript perform type coercion and convert the other number parameter into string and concatenates the two string. </i>
 
 </p>
 </details>
