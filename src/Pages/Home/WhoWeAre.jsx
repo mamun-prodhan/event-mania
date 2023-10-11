@@ -1,13 +1,13 @@
 const WhoWeAre = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-10 mt-16 md:mt-28 lg:mt-32 px-6">
-      <div
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-        data-aos-duration="1500"
-        className="flex-1"
-      >
+    <div
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="1500"
+      className="flex flex-col lg:flex-row items-center gap-6 md:gap-10 mt-16 md:mt-28 lg:mt-32 px-6"
+    >
+      <div className="flex-1">
         <h4 className="text-xl text-center lg:text-start tracking-[4px]">
           WE ARE Event Mania
         </h4>
@@ -18,13 +18,7 @@ const WhoWeAre = () => {
         <button className="btn btn-primary hidden lg:block">Get Started</button>
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center ">
-        <div
-          data-aos="zoom-in-down"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1500"
-          className="flex-1"
-        >
+        <div className="flex-1">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">
             Our Mission
           </h2>
@@ -40,13 +34,7 @@ const WhoWeAre = () => {
             occasion unforgettable.
           </p>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="1500"
-          className="flex-1"
-        >
+        <div className="flex-1">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">
             Our Vission
           </h2>

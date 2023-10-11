@@ -2,7 +2,7 @@
 
 An Event management website
 
-**Live Link:** [https://www.myawesomewebsite.com](https://www.myawesomewebsite.com)
+**Live Link:** [https://event-mania-a9.web.app/](https://event-mania-a9.web.app/)
 
 ## Features and Functionalities
 

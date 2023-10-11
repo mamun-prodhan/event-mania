@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      data-aos="zoom-out-left"
+      data-aos="zoom-in"
       data-aos-duration="1500"
       className=" footer mt-10 md:mt-24 p-10 bg-base-200 text-base-content"
     >

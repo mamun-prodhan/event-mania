@@ -13,7 +13,7 @@ const Home = () => {
       <div>
         <h2
           data-aos="zoom-in"
-          data-aos-once="false"
+          data-aos-once="true"
           className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-10"
         >
           Our Services
