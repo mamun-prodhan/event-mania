@@ -71,7 +71,7 @@ console.log(food);
 
 #### Answer: A
 
-<i>Here food is an array, we declared an object named info with the 0 index element of food array. Then we changed the value of info object. It dosen't effect the main array.Because we declared a new object and we changed the object value. object and array is in different mamory location thats why it dosen't effect the main array</i>
+<i>Here food is an array, we declared an object named info with the value of 0 index element of food array. Then we changed the value of info object. It dosen't effect the main array.Because we declared a new object and we changed the object value. object and array is in different mamory location thats why it dosen't effect the main array</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Here, we have count initialized with 0, nums array containing number element. Now we are looping througn the nums array and checking the condition that , if the num element is true then we are updating the count+=1. In the nums array only 0 element is falsy that means the other 3 element is truthy and the count value will be update 3 times and its final value will be 3</i>
 
 </p>
 </details>
