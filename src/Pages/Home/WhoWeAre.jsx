@@ -1,5 +1,3 @@
-import React from "react";
-
 const WhoWeAre = () => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-10 mt-32">

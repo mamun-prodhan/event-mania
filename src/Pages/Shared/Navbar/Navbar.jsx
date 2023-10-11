@@ -70,7 +70,7 @@ const Navbar = () => {
         {user && (
           <div className="flex items-center gap-3 mx-6">
             <img
-              className="w-10 rounded-full"
+              className="w-10 h-10 border-2 rounded-full"
               src={user.photoURL}
               alt="Photo"
             />
