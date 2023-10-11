@@ -1,7 +1,11 @@
 import banner2 from "../../assets/banner2.png";
 const Banner = () => {
   return (
-    <div className="relative mb-6 md:mb-14 lg:mb-20 md:mt-6 lg:mt-10">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      className="relative mb-6 md:mb-14 lg:mb-20 md:mt-6 lg:mt-10"
+    >
       <img className="lg:rounded-t-xl" src={banner2} alt="Banner" />
       <div className="absolute inset-0 bg-black opacity-50 rounded-t-xl"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

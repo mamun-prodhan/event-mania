@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ service }) => {
   const { id, title, image, price, description } = service;
   return (
-    <div className="card card-compact  bg-base-100 shadow-xl pb-4">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      className="card card-compact  bg-base-100 shadow-xl pb-4"
+    >
       <figure>
         <img src={image} alt="Shoes" />
       </figure>
