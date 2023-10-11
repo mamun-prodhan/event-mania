@@ -11,7 +11,9 @@ import logo9 from "../../assets/logo9.jpg";
 const Testimonials = () => {
   return (
     <div className="mt-32">
-      <h2 className="text-center text-4xl font-bold">Our Partners</h2>
+      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold">
+        Our Partners
+      </h2>
       <p className="text-center my-4">Know about our sponsors</p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         <img src={logo1} alt="" />

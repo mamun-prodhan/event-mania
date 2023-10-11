@@ -33,10 +33,10 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 py-4">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden ps-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -59,34 +59,52 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
+        <Link to="/" className="btn btn-ghost normal-case text-xl p-0">
           Event Mania
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="flex gap-10 px-1">{navLinks}</ul>
+        <ul className="flex gap-10 px-1 font-bold">{navLinks}</ul>
       </div>
       <div className="navbar-end">
         {user && (
-          <div className="flex items-center gap-3 mx-6">
+          <div className="flex items-center gap-1 md:gap-3 mx-0 md:mx-6">
             <img
-              className="w-10 h-10 border-2 rounded-full"
+              className="w-8 md:w-10 h-8 md:h-10 border-2 rounded-full"
               src={user.photoURL}
               alt="Photo"
             />
-            <p className="font-bold">{user.displayName}</p>
+            <p className="text-xs md:text-base font-normal md:font-semibold hidden md:block">
+              {user.displayName}
+            </p>
+            <p className="text-xs md:text-base font-normal md:font-semibold block md:hidden">
+              {user.displayName && user.displayName.length > 6
+                ? user.displayName.slice(0, 6) + ".."
+                : user.displayName}
+            </p>
           </div>
         )}
         {user ? (
-          <Link onClick={handleSignOut} className="">
+          <Link
+            onClick={handleSignOut}
+            className="px-3 text-sm md:text-base font-bold"
+          >
             Logout
           </Link>
         ) : (
           <>
-            <NavLink className="me-10" to="/login">
+            <NavLink
+              className=" me-2 md:me-10 font-bold text-sm md:text-base"
+              to="/login"
+            >
               Login
             </NavLink>
-            <NavLink to="/register">Register</NavLink>
+            <NavLink
+              className="font-bold mx-3  text-sm md:text-base"
+              to="/register"
+            >
+              Register
+            </NavLink>
           </>
         )}
       </div>

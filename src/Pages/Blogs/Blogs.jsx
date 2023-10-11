@@ -53,10 +53,12 @@ const Blogs = () => {
     },
   ];
   return (
-    <div className="my-10">
+    <div className="my-8 lg:my-10">
       <div className="text-center">
-        <h2 className="text-4xl font-bold">EVENT MANIA</h2>
-        <h2 className="text-2xl font-semibold my-6">LATEST BLOGS</h2>
+        <h2 className="text-3xl lg:text-4xl font-bold">EVENT MANIA</h2>
+        <h2 className="text-xl md:text-2xl font-semibold my-4 lg:my-6">
+          LATEST BLOGS
+        </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {events.map((event, idx) => (
