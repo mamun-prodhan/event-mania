@@ -1,16 +1,15 @@
 # My Awesome Website
 
-Welcome to My Awesome Website!
+Event Mania
 
-**Website Name:** My Awesome Website
 **Live Link:** [https://www.myawesomewebsite.com](https://www.myawesomewebsite.com)
 
 ## Features and Functionalities
 
-- **User Registration:** Create an account and personalize your experience.
-- **Interactive Dashboard:** Access all your data and settings in one place.
-- **Content Sharing:** Share your favorite articles, images, and videos with friends.
-- **Search Functionality:** Easily find the content you're looking for with our powerful search.
-- **Responsive Design:** Enjoy a seamless experience on any device, whether it's a desktop, tablet, or smartphone.
+- **Email Password Authentication:** User can Login and Register using their Email and Password
+- **Google Authentication:** User also can login using their google account.
+- **Private Route:** We have some private or protechted route, user can't get access in those private route without login authentication.
+- **User Profile:** There is a profile section in the navbar, after successfull login user profile image and user name will appear in the navbar.
+- **Responsive Design:** The entire website is fully responsive for the desktop, tablet and mobile device.
 
 Feel free to explore our website and make the most out of these exciting features!
