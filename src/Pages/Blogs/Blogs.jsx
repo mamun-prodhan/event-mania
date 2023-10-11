@@ -53,7 +53,7 @@ const Blogs = () => {
     },
   ];
   return (
-    <div className="my-8 lg:my-10">
+    <div className="my-8 lg:my-10 px-3 md:px-4 lg:px-0">
       <div className="text-center">
         <h2 className="text-3xl lg:text-4xl font-bold">EVENT MANIA</h2>
         <h2 className="text-xl md:text-2xl font-semibold my-4 lg:my-6">
