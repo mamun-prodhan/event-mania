@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>We are calling a function without providing the argument. As a result, the value of 'name' will be undefined. In this case javascript dosen't throw any error, it converts undefined into a string and include it in the result.</i>
 
 </p>
 </details>
